@@ -1,0 +1,814 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Ruby On Rails Essential Training - lynda.com Online Training Library&reg;</title>
+
+</head>
+<body>
+			<h1>Ruby On Rails Essential Training<br />
+			with: <a href="index.html">Kevin Skoglund</a></h1>
+			<p>Ruby on Rails aims to make building web applications simpler. In <em>Ruby on Rails Essential Training</em>, expert instructor Kevin Skoglund focuses on the same goal. Kevin explains the complete process--from understanding the fundamental concepts behind any Ruby on Rails project to creating full-featured, easy-to-maintain applications using the Ruby on Rails framework. Using the practical project of building an online store as an example, Skoglund teaches the basics of the Ruby language. He also covers how to design an application, how to build dynamic interfaces, how to structure and interact with databases, how to create a working shopping cart, and how to regulate user access with passwords. We thank our colleagues at <a href=http://pragmaticprogrammer.com/titles target="_blank">The Pragmatic Programmers, L.L.C.</a>, for permission to adapt certain code from their book <i><a href=http://www.pragmaticprogrammer.com/titles/rails2/index.html target="_blank">Agile Web Development with Rails</a></i> for use in this tutorial. Exercise files accompany the tutorials. </p>
+
+        <h3>&nbsp;</h3>
+<div id="divTableOfContents">
+	<h1>Table of contents</h1>
+	
+			<h3>Introduction</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c1-m1" href="index.html" class="notViewed">Introduction</a>			</td>
+		  <td nowrap="nowrap" align="right">3:21</td>
+			<td nowrap="nowrap" align="right" width="75">4.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c1-m2" href="index.html" class="notViewed">How to use the exercise files</a>			</td>
+		  <td nowrap="nowrap" align="right">2:01</td>
+			<td nowrap="nowrap" align="right" width="75">2.6 MB</td>
+		</tr>
+	</table>
+  <h3>1. What Is Ruby on Rails?</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c2-m1" href="index.html" class="notViewed">What is Ruby on Rails?</a>			</td>
+		  <td nowrap="nowrap" align="right">2:18</td>
+			<td nowrap="nowrap" align="right" width="75">1.8 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c2-m2" href="index.html" class="notViewed">What is Rails?</a>			</td>
+		  <td nowrap="nowrap" align="right">2:44</td>
+			<td nowrap="nowrap" align="right" width="75">2 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c2-m3" href="index.html" class="notViewed">DRY, conventions, and sensible defaults</a>			</td>
+		  <td nowrap="nowrap" align="right">3:34</td>
+			<td nowrap="nowrap" align="right" width="75">2.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c2-m4" href="index.html" class="notViewed">MVC architecture</a>			</td>
+		  <td nowrap="nowrap" align="right">4:43</td>
+			<td nowrap="nowrap" align="right" width="75">3.3 MB</td>
+		</tr>
+	</table>
+  <h3>2. Installing Ruby on Rails</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c3-m1" href="index.html" class="notViewed">Installation overview</a>			</td>
+		  <td nowrap="nowrap" align="right">7:03</td>
+			<td nowrap="nowrap" align="right" width="75">8.7 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c3-m2" href="index.html" class="notViewed">Installing Ruby and RubyGems</a>			</td>
+		  <td nowrap="nowrap" align="right">20:05</td>
+			<td nowrap="nowrap" align="right" width="75">40.7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c3-m3" href="index.html" class="notViewed">Installing Rails</a>			</td>
+		  <td nowrap="nowrap" align="right">3:26</td>
+			<td nowrap="nowrap" align="right" width="75">4.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c3-m4" href="index.html" class="notViewed">Installing MySQL</a>			</td>
+		  <td nowrap="nowrap" align="right">10:13</td>
+			<td nowrap="nowrap" align="right" width="75">17.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c3-m5" href="index.html" class="notViewed">TextMate</a>			</td>
+		  <td nowrap="nowrap" align="right">4:42</td>
+			<td nowrap="nowrap" align="right" width="75">7.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c3-m6" href="index.html" class="notViewed">Webserver</a>			</td>
+		  <td nowrap="nowrap" align="right">2:14</td>
+			<td nowrap="nowrap" align="right" width="75">4.1 MB</td>
+		</tr>
+	</table>
+  <h3>3. Getting Started</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c4-m1" href="index.html" class="notViewed">Creating a work folder and a Rails project</a>			</td>
+		  <td nowrap="nowrap" align="right">6:50</td>
+			<td nowrap="nowrap" align="right" width="75">9.5 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c4-m2" href="index.html" class="notViewed">Creating a controller and an action</a>			</td>
+		  <td nowrap="nowrap" align="right">8:22</td>
+			<td nowrap="nowrap" align="right" width="75">11.5 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c4-m3" href="index.html" class="notViewed">Creating a view</a>			</td>
+		  <td nowrap="nowrap" align="right">5:35</td>
+			<td nowrap="nowrap" align="right" width="75">6.3 MB</td>
+		</tr>
+	</table>
+  <h3>4. How the Rails Framework Works</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c5-m1" href="index.html" class="notViewed">Understanding the operation trail</a>			</td>
+		  <td nowrap="nowrap" align="right">4:22</td>
+			<td nowrap="nowrap" align="right" width="75">4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c5-m2" href="index.html" class="notViewed">Getting familiar with the file structure</a>			</td>
+		  <td nowrap="nowrap" align="right">5:12</td>
+			<td nowrap="nowrap" align="right" width="75">7.2 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c5-m3" href="index.html" class="notViewed">How server requests are handled</a>			</td>
+		  <td nowrap="nowrap" align="right">10:02</td>
+			<td nowrap="nowrap" align="right" width="75">16.8 MB</td>
+		</tr>
+	</table>
+  <h3>5. Setting Up a Database</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c6-m1" href="index.html" class="notViewed">A quick dip in the database pool</a>			</td>
+		  <td nowrap="nowrap" align="right">2:24</td>
+			<td nowrap="nowrap" align="right" width="75">1.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c6-m2" href="index.html" class="notViewed">Creating a database and a database table</a>			</td>
+		  <td nowrap="nowrap" align="right">9:21</td>
+			<td nowrap="nowrap" align="right" width="75">13.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c6-m3" href="index.html" class="notViewed">Configuring a Rails application to connect</a>			</td>
+		  <td nowrap="nowrap" align="right">7:27</td>
+			<td nowrap="nowrap" align="right" width="75">11.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c6-m4" href="index.html" class="notViewed">Scaffold: Magic CRUD</a>			</td>
+		  <td nowrap="nowrap" align="right">9:22</td>
+			<td nowrap="nowrap" align="right" width="75">11.4 MB</td>
+		</tr>
+	</table>
+  <h3>6. Controllers, Views, and Dynamic Content</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c7-m1" href="index.html" class="notViewed">RHTML: Adding dynamic content to the view</a>			</td>
+		  <td nowrap="nowrap" align="right">8:59</td>
+			<td nowrap="nowrap" align="right" width="75">10.5 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c7-m2" href="index.html" class="notViewed">Variables in Ruby</a>			</td>
+		  <td nowrap="nowrap" align="right">7:08</td>
+			<td nowrap="nowrap" align="right" width="75">6.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c7-m3" href="index.html" class="notViewed">Getting the controller to interact with the view</a>			</td>
+		  <td nowrap="nowrap" align="right">4:40</td>
+			<td nowrap="nowrap" align="right" width="75">6.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c7-m4" href="index.html" class="notViewed">Calling controller actions from other actions</a>			</td>
+		  <td nowrap="nowrap" align="right">6:27</td>
+			<td nowrap="nowrap" align="right" width="75">6.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c7-m5" href="index.html" class="notViewed">Linking to other actions from the view</a>			</td>
+		  <td nowrap="nowrap" align="right">8:41</td>
+			<td nowrap="nowrap" align="right" width="75">9.2 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c7-m6" href="index.html" class="notViewed">Rendering an action</a>			</td>
+		  <td nowrap="nowrap" align="right">11:51</td>
+			<td nowrap="nowrap" align="right" width="75">13.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c7-m7" href="index.html" class="notViewed">Redirecting an action</a>			</td>
+		  <td nowrap="nowrap" align="right">7:52</td>
+			<td nowrap="nowrap" align="right" width="75">7.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c7-m8" href="index.html" class="notViewed">Public vs. private actions</a>			</td>
+		  <td nowrap="nowrap" align="right">7:15</td>
+			<td nowrap="nowrap" align="right" width="75">8.5 MB</td>
+		</tr>
+	</table>
+  <h3>7. Essential Ruby</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c8-m1" href="index.html" class="notViewed">Review and introduction</a>			</td>
+		  <td nowrap="nowrap" align="right">2:30</td>
+			<td nowrap="nowrap" align="right" width="75">2.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c8-m2" href="index.html" class="notViewed">String basics</a>			</td>
+		  <td nowrap="nowrap" align="right">11:16</td>
+			<td nowrap="nowrap" align="right" width="75">12.9 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c8-m3" href="index.html" class="notViewed">Double-quoted strings</a>			</td>
+		  <td nowrap="nowrap" align="right">5:45</td>
+			<td nowrap="nowrap" align="right" width="75">8.5 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c8-m4" href="index.html" class="notViewed">Numbers</a>			</td>
+		  <td nowrap="nowrap" align="right">11:26</td>
+			<td nowrap="nowrap" align="right" width="75">13.1 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c8-m5" href="index.html" class="notViewed">Introduction to arrays</a>			</td>
+		  <td nowrap="nowrap" align="right">7:11</td>
+			<td nowrap="nowrap" align="right" width="75">7 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c8-m6" href="index.html" class="notViewed">Manipulating arrays</a>			</td>
+		  <td nowrap="nowrap" align="right">9:29</td>
+			<td nowrap="nowrap" align="right" width="75">11.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c8-m7" href="index.html" class="viewedMovie">Ranges</a>			</td>
+		  <td nowrap="nowrap" align="right">4:47</td>
+			<td nowrap="nowrap" align="right" width="75">5.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c8-m8" href="index.html" class="notViewed">Hashes</a>			</td>
+		  <td nowrap="nowrap" align="right">11:53</td>
+			<td nowrap="nowrap" align="right" width="75">12.7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c8-m9" href="index.html" class="notViewed">Control flow: Logical expressions</a>			</td>
+		  <td nowrap="nowrap" align="right">10:08</td>
+			<td nowrap="nowrap" align="right" width="75">10.7 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c8-m10" href="index.html" class="notViewed">Control flow: Loops and blocks</a>			</td>
+		  <td nowrap="nowrap" align="right">5:18</td>
+			<td nowrap="nowrap" align="right" width="75">5.6 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c8-m11" href="index.html" class="notViewed">Control flow: Iterators</a>			</td>
+		  <td nowrap="nowrap" align="right">8:37</td>
+			<td nowrap="nowrap" align="right" width="75">10 MB</td>
+		</tr>
+	</table>
+  <h3>8. Troubleshooting</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c9-m1" href="index.html" class="notViewed">Commenting your code</a>			</td>
+		  <td nowrap="nowrap" align="right">4:22</td>
+			<td nowrap="nowrap" align="right" width="75">5.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c9-m2" href="index.html" class="notViewed">Errors and logs</a>			</td>
+		  <td nowrap="nowrap" align="right">6:38</td>
+			<td nowrap="nowrap" align="right" width="75">13.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c9-m3" href="index.html" class="notViewed">Seeing what went wrong</a>			</td>
+		  <td nowrap="nowrap" align="right">6:42</td>
+			<td nowrap="nowrap" align="right" width="75">8.1 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c9-m4" href="index.html" class="notViewed">Breaking problems into pieces</a>			</td>
+		  <td nowrap="nowrap" align="right">1:28</td>
+			<td nowrap="nowrap" align="right" width="75">1 MB</td>
+		</tr>
+	</table>
+  <h3>9. Models</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c10-m1" href="index.html" class="notViewed">Creating a model</a>			</td>
+		  <td nowrap="nowrap" align="right">3:46</td>
+			<td nowrap="nowrap" align="right" width="75">4.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c10-m2" href="index.html" class="notViewed">Accessing your model</a>			</td>
+		  <td nowrap="nowrap" align="right">5:52</td>
+			<td nowrap="nowrap" align="right" width="75">6.2 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c10-m3" href="index.html" class="notViewed">Adding model attributes</a>			</td>
+		  <td nowrap="nowrap" align="right">6:28</td>
+			<td nowrap="nowrap" align="right" width="75">8.3 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c10-m4" href="index.html" class="notViewed">Understanding instances</a>			</td>
+		  <td nowrap="nowrap" align="right">8:04</td>
+			<td nowrap="nowrap" align="right" width="75">7.9 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c10-m5" href="index.html" class="notViewed">Manipulating instances</a>			</td>
+		  <td nowrap="nowrap" align="right">5:53</td>
+			<td nowrap="nowrap" align="right" width="75">5.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c10-m6" href="index.html" class="notViewed">Setting default values with Initialize</a>			</td>
+		  <td nowrap="nowrap" align="right">3:42</td>
+			<td nowrap="nowrap" align="right" width="75">4.4 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c10-m7" href="index.html" class="notViewed">Creating inheritance</a>			</td>
+		  <td nowrap="nowrap" align="right">6:20</td>
+			<td nowrap="nowrap" align="right" width="75">7.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c10-m8" href="index.html" class="notViewed">Using inheritance</a>			</td>
+		  <td nowrap="nowrap" align="right">6:54</td>
+			<td nowrap="nowrap" align="right" width="75">8.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c10-m9" href="index.html" class="notViewed">Basic model interaction</a>			</td>
+		  <td nowrap="nowrap" align="right">8:27</td>
+			<td nowrap="nowrap" align="right" width="75">9.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c10-m10" href="index.html" class="notViewed">Advanced model interaction</a>			</td>
+		  <td nowrap="nowrap" align="right">11:26</td>
+			<td nowrap="nowrap" align="right" width="75">13.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c10-m11" href="index.html" class="notViewed">Judicious model use</a>			</td>
+		  <td nowrap="nowrap" align="right">2:27</td>
+			<td nowrap="nowrap" align="right" width="75">1.6 MB</td>
+		</tr>
+	</table>
+  <h3>10. Working with Databases</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c11-m1" href="index.html" class="notViewed">Setting up for this chapter</a>			</td>
+		  <td nowrap="nowrap" align="right">1:30</td>
+			<td nowrap="nowrap" align="right" width="75">2.7 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m2" href="index.html" class="notViewed">Switching back to our database</a>			</td>
+		  <td nowrap="nowrap" align="right">3:56</td>
+			<td nowrap="nowrap" align="right" width="75">5.5 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m3" href="index.html" class="notViewed">Basic SQL syntax</a>			</td>
+		  <td nowrap="nowrap" align="right">4:20</td>
+			<td nowrap="nowrap" align="right" width="75">3.1 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m4" href="index.html" class="notViewed">Using SQL syntax</a>			</td>
+		  <td nowrap="nowrap" align="right">5:31</td>
+			<td nowrap="nowrap" align="right" width="75">8.5 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m5" href="index.html" class="notViewed">Finding records in Rails</a>			</td>
+		  <td nowrap="nowrap" align="right">8:27</td>
+			<td nowrap="nowrap" align="right" width="75">10.4 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m6" href="index.html" class="notViewed">Using conditions to find specific records</a>			</td>
+		  <td nowrap="nowrap" align="right">7:37</td>
+			<td nowrap="nowrap" align="right" width="75">7.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m7" href="index.html" class="notViewed">Ordering found records</a>			</td>
+		  <td nowrap="nowrap" align="right">2:19</td>
+			<td nowrap="nowrap" align="right" width="75">3 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m8" href="index.html" class="notViewed">Limiting found records</a>			</td>
+		  <td nowrap="nowrap" align="right">2:46</td>
+			<td nowrap="nowrap" align="right" width="75">3.6 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m9" href="index.html" class="notViewed">Finding a single record</a>			</td>
+		  <td nowrap="nowrap" align="right">7:48</td>
+			<td nowrap="nowrap" align="right" width="75">10.8 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m10" href="index.html" class="notViewed">Using parameters to find records</a>			</td>
+		  <td nowrap="nowrap" align="right">5:10</td>
+			<td nowrap="nowrap" align="right" width="75">6.7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m11" href="index.html" class="notViewed">Creating and saving records</a>			</td>
+		  <td nowrap="nowrap" align="right">5:29</td>
+			<td nowrap="nowrap" align="right" width="75">7.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m12" href="index.html" class="notViewed">Submitting forms to the database</a>			</td>
+		  <td nowrap="nowrap" align="right">11:17</td>
+			<td nowrap="nowrap" align="right" width="75">16.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m13" href="index.html" class="notViewed">Updating records</a>			</td>
+		  <td nowrap="nowrap" align="right">6:05</td>
+			<td nowrap="nowrap" align="right" width="75">8.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c11-m14" href="index.html" class="notViewed">Deleting records</a>			</td>
+		  <td nowrap="nowrap" align="right">3:46</td>
+			<td nowrap="nowrap" align="right" width="75">4.7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c11-m15" href="index.html" class="notViewed">Validating database data</a>			</td>
+		  <td nowrap="nowrap" align="right">8:21</td>
+			<td nowrap="nowrap" align="right" width="75">10.3 MB</td>
+		</tr>
+	</table>
+  <h3>11. Building an Application, Pt. 1: Working with Multiple Databases</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c12-m1" href="index.html" class="notViewed">Blueprinting your application</a>			</td>
+		  <td nowrap="nowrap" align="right">6:44</td>
+			<td nowrap="nowrap" align="right" width="75">4.8 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m2" href="index.html" class="notViewed">Preparing databases</a>			</td>
+		  <td nowrap="nowrap" align="right">7:34</td>
+			<td nowrap="nowrap" align="right" width="75">9 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c12-m3" href="index.html" class="notViewed">Relating databases: One-to-many</a>			</td>
+		  <td nowrap="nowrap" align="right">4:07</td>
+			<td nowrap="nowrap" align="right" width="75">3.2 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m4" href="index.html" class="notViewed">Creating a relationship</a>			</td>
+		  <td nowrap="nowrap" align="right">9:10</td>
+			<td nowrap="nowrap" align="right" width="75">14.2 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c12-m5" href="index.html" class="notViewed">Generating your own scaffold</a>			</td>
+		  <td nowrap="nowrap" align="right">2:58</td>
+			<td nowrap="nowrap" align="right" width="75">5 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m6" href="index.html" class="notViewed">The Flash hash</a>			</td>
+		  <td nowrap="nowrap" align="right">4:30</td>
+			<td nowrap="nowrap" align="right" width="75">6.4 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c12-m7" href="index.html" class="notViewed">Partials</a>			</td>
+		  <td nowrap="nowrap" align="right">2:26</td>
+			<td nowrap="nowrap" align="right" width="75">4.3 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m8" href="index.html" class="notViewed">CRUD and relational databases</a>			</td>
+		  <td nowrap="nowrap" align="right">12:43</td>
+			<td nowrap="nowrap" align="right" width="75">19 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c12-m9" href="index.html" class="notViewed">Relating databases: Many-to-many (simple)</a>			</td>
+		  <td nowrap="nowrap" align="right">4:26</td>
+			<td nowrap="nowrap" align="right" width="75">3.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m10" href="index.html" class="notViewed">Creating a simple join table</a>			</td>
+		  <td nowrap="nowrap" align="right">15:13</td>
+			<td nowrap="nowrap" align="right" width="75">22.6 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c12-m11" href="index.html" class="notViewed">Relating databases: Many-to-many (rich)</a>			</td>
+		  <td nowrap="nowrap" align="right">3:16</td>
+			<td nowrap="nowrap" align="right" width="75">2.8 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c12-m12" href="index.html" class="notViewed">Creating a rich join table</a>			</td>
+		  <td nowrap="nowrap" align="right">3:57</td>
+			<td nowrap="nowrap" align="right" width="75">5.7 MB</td>
+		</tr>
+	</table>
+  <h3>12. Building an Application, Pt. 2: Creating Interfaces</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c13-m1" href="index.html" class="notViewed">Building the admin area</a>			</td>
+		  <td nowrap="nowrap" align="right">7:23</td>
+			<td nowrap="nowrap" align="right" width="75">8.1 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c13-m2" href="index.html" class="notViewed">Finishing the admin area</a>			</td>
+		  <td nowrap="nowrap" align="right">5:14</td>
+			<td nowrap="nowrap" align="right" width="75">7.9 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c13-m3" href="index.html" class="notViewed">Designing the public area</a>			</td>
+		  <td nowrap="nowrap" align="right">6:54</td>
+			<td nowrap="nowrap" align="right" width="75">10 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c13-m4" href="index.html" class="notViewed">Adding images</a>			</td>
+		  <td nowrap="nowrap" align="right">2:51</td>
+			<td nowrap="nowrap" align="right" width="75">4.7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c13-m5" href="index.html" class="notViewed">Cycle and zebra-striping</a>			</td>
+		  <td nowrap="nowrap" align="right">2:29</td>
+			<td nowrap="nowrap" align="right" width="75">3.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c13-m6" href="index.html" class="notViewed">Formatting dates and times</a>			</td>
+		  <td nowrap="nowrap" align="right">4:26</td>
+			<td nowrap="nowrap" align="right" width="75">7 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c13-m7" href="index.html" class="notViewed">Helpers: Built-in and custom</a>			</td>
+		  <td nowrap="nowrap" align="right">4:41</td>
+			<td nowrap="nowrap" align="right" width="75">8.7 MB</td>
+		</tr>
+	</table>
+  <h3>13. Building an Application, Pt. 3: Adding a Shopping Cart</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c14-m1" href="index.html" class="notViewed">Building a shopping cart</a>			</td>
+		  <td nowrap="nowrap" align="right">10:03</td>
+			<td nowrap="nowrap" align="right" width="75">10.8 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c14-m2" href="index.html" class="notViewed">Cookies and sessions</a>			</td>
+		  <td nowrap="nowrap" align="right">7:14</td>
+			<td nowrap="nowrap" align="right" width="75">9.5 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c14-m3" href="index.html" class="notViewed">Creating a ''before'' filter</a>			</td>
+		  <td nowrap="nowrap" align="right">2:24</td>
+			<td nowrap="nowrap" align="right" width="75">3.2 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c14-m4" href="index.html" class="notViewed">Adding items to the cart</a>			</td>
+		  <td nowrap="nowrap" align="right">6:06</td>
+			<td nowrap="nowrap" align="right" width="75">9.8 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c14-m5" href="index.html" class="notViewed">Emptying the cart</a>			</td>
+		  <td nowrap="nowrap" align="right">3:41</td>
+			<td nowrap="nowrap" align="right" width="75">6.4 MB</td>
+		</tr>
+	</table>
+  <h3>14. Building an Application, Pt. 4: Finishing Your Application</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c15-m1" href="index.html" class="notViewed">Layouts</a>			</td>
+		  <td nowrap="nowrap" align="right">5:10</td>
+			<td nowrap="nowrap" align="right" width="75">7.3 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c15-m2" href="index.html" class="notViewed">Sending values to layouts</a>			</td>
+		  <td nowrap="nowrap" align="right">3:58</td>
+			<td nowrap="nowrap" align="right" width="75">5.3 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c15-m3" href="index.html" class="notViewed">Building a checkout form</a>			</td>
+		  <td nowrap="nowrap" align="right">2:32</td>
+			<td nowrap="nowrap" align="right" width="75">2.9 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c15-m4" href="index.html" class="notViewed">Handling payments</a>			</td>
+		  <td nowrap="nowrap" align="right">6:40</td>
+			<td nowrap="nowrap" align="right" width="75">9.9 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c15-m5" href="index.html" class="notViewed">Using stylesheets</a>			</td>
+		  <td nowrap="nowrap" align="right">4:20</td>
+			<td nowrap="nowrap" align="right" width="75">7.3 MB</td>
+		</tr>
+	</table>
+  <h3>15. Building an Application, Pt. 5: Regulating User Access</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c16-m1" href="index.html" class="notViewed">Setting up encrypted passwords</a>			</td>
+		  <td nowrap="nowrap" align="right">6:44</td>
+			<td nowrap="nowrap" align="right" width="75">8.6 MB</td>
+		</tr>
+	
+		<tr class="altRowOdd">
+			<td>
+				<a id="c16-m2" href="index.html" class="notViewed">Logging in users</a>			</td>
+		  <td nowrap="nowrap" align="right">3:30</td>
+			<td nowrap="nowrap" align="right" width="75">5.2 MB</td>
+		</tr>
+	
+		<tr class="altRow">
+			<td>
+				<a id="c16-m3" href="index.html" class="notViewed">Regulating user access</a>			</td>
+		  <td nowrap="nowrap" align="right">6:37</td>
+			<td nowrap="nowrap" align="right" width="75">10.9 MB</td>
+		</tr>
+	</table>
+  <h3>16. Deploying Your Application</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c17-m1" href="index.html" class="notViewed">Deploying your application</a>			</td>
+		  <td nowrap="nowrap" align="right">3:17</td>
+			<td nowrap="nowrap" align="right" width="75">5 MB</td>
+		</tr>
+	</table>
+  <h3>Conclusion</h3>
+			<table width="95%" cellpadding="3" class="linkList">
+			
+		<tr class="altRow">
+			<td>
+				<a id="c18-m1" href="index.html" class="notViewed">Goodbye</a>			</td>
+		  <td nowrap="nowrap" align="right">0:49</td>
+			<td nowrap="nowrap" align="right" width="75">1.1 MB</td>
+		</tr>
+		</table>
+	
+</div>  </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*
+	Code snippet to handle a completed Ajax response
+	This code needs to be dropped into a function
+*/
+
+	if (xhr.readyState == 4) {
+		if (xhr.status == 200) {
+			var outMsg = xhr.responseText;
+		}
+		else {
+			var outMsg = "There was a problem with the request " + xhr.status;
+		}
+
+		// Do something here with outMsg
+	}

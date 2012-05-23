@@ -1,0 +1,15 @@
+#previewWin {
+	background-color: #FF9;
+	width: 150px;
+	height: 200px;
+	font: .6em arial, helvetica, sans-serif;
+	padding: 5px;
+	position: absolute;
+	visibility: hidden;
+	border: 1px #CC0 solid;
+	overflow: hidden;
+}
+
+#previewWin h1, #previewWin h2 {
+	font-size: 1.0em;
+}

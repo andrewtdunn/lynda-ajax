@@ -1,0 +1,37 @@
+body {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.pickedDiv {
+	z-index: 3;
+	background-color: #F00;
+	opacity: 0.20;
+}
+
+img {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#detail {
+	visibility: hidden;
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid gray;
+	z-index: 5;
+	width: 100px;
+	height: 75px;
+	overflow: hidden;
+	font-size: 0.6em;
+	padding: 5px;
+}
+
+#closeBox {
+	font-style: monaco, sans-serif;
+	position: absolute;
+	top: 1px;
+	left: 97px;
+	font-size: .6em;
+	border: 2px solid gray;
+	margin: 3px;
+}

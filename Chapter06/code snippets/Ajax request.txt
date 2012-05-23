@@ -1,0 +1,31 @@
+/*
+	Code snippet to create a new Ajax request
+	This code needs to be dropped into a function
+	
+	Requires:
+	 - variable xhr to be declared globally
+	 - a function called showContents to handle the completed request
+		(or modify onreadystate assignment to use the correct function)
+	 - the variable url needs to be set prior to this code
+*/
+
+	if (window.XMLHttpRequest) {
+		xhr = new XMLHttpRequest();
+	}
+	else {
+		if (window.ActiveXObject) {
+			try {
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch (e) { }
+		}
+	}
+
+	if (xhr) {
+		xhr.onreadystatechange = showContents;
+		xhr.open("GET", url, true);
+		xhr.send(null);
+	}
+	else {
+		alert("Sorry, but I couldn't create an XMLHttpRequest");
+	}
